@@ -186,7 +186,7 @@ exports.getReact = (subject, component, reactOpts = {}) => {
         }
 
         if (subject) {
-          elements = window.resq.resq$$(component, subject);
+          elements = window.resq.resq$$(component, subject.node);
         } else {
           if (getReactRoot(reactOpts.root) !== undefined) {
             elements = window.resq.resq$$(
